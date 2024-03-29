@@ -1,0 +1,155 @@
+.pitch_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  margin-top: 10rem;
+}
+
+.pitch_inner {
+  width: 80%;
+}
+
+.pitch_header {
+  font-family: var(--font);
+  font-size: clamp(21.33px, 3.125vw, 45.52px);
+  font-weight: 700;
+  color: #263789;
+  text-align: center;
+  line-height: normal;
+  margin-bottom: 25px;
+}
+.see{
+  color: #FF6A04;
+  cursor: pointer;
+}
+
+.content_div {
+  background: #f0f1f7;
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+
+
+.pitchImage {
+  width: 100%;
+}
+
+.text_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  width: 50%;
+}
+.heading3 {
+  color: var(--grey);
+  line-height: 10px;
+  /* text-align: center; */
+}
+.paragraph {
+  width: 100%;
+  font-family: 'Roboto';
+  font-weight:900;
+  font-size: 17px;
+  line-height: 28px; 
+  margin-top: 20px;
+  text-align: justify;
+}
+.button {
+  background-color: var(--darkblue);
+  color: white;
+  border-radius: 25px;
+  padding-inline: 24px;
+  padding-block: 19px;
+  font-size: clamp(14px, 1vw, 16px);
+  outline: none;
+  border: none;
+  align-self: self-start;
+}
+.button:hover {
+  background: var(--black);
+}
+.pitchImage {
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.regularButton {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .pitch_inner {
+    width: 90%;
+  }
+  .paragraph {
+    font-size: 1rem;
+  }
+  .pitch_container {
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 950px) {
+
+  .content_div {
+    margin-top: 2rem;
+    flex-direction: column;
+    width: 95%;
+    gap: 20px;
+  }
+  .see{
+    color: #FF6A04;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .img_div {
+    width: 70%;
+  }
+  .text_div {
+    width: 100%;
+    padding: 2%;
+    margin-top: -40%;
+    font-weight: 100px;
+    text-align: left;
+  }
+  .pitch_container {
+    margin-top: 5rem;
+  }
+  .paragraph {
+    width: 100%;
+    font-family: 'Roboto';
+    font-size: 12px;
+    text-align: left;
+  }
+ 
+}
+@media screen and (max-width: 500px) {
+  .content_div {
+    margin-top: 2rem;
+    gap: 20px;
+    width: 100%;
+  }
+  .img_div {
+    width: 95%;
+  }
+  .text_div {
+    width: 95%;
+  }
+  .paragraph {
+    font-size: 0.9rem;
+    line-height: 25px;
+    margin-top: 10px;
+  }
+
+  .btn_container {
+    display: flex;
+    justify-content: center;
+  }
+}

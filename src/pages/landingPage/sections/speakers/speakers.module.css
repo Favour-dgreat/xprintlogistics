@@ -1,0 +1,129 @@
+.container {
+  padding-block: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 90%;
+  margin-inline: auto;
+}
+.paragraph {
+  color: var(--grey);
+  font-size: clamp(21.33px, 3.125vw, 50.52px);
+  font-weight: 700;
+  text-align: center;
+}
+.flex_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 1440px;
+  margin-inline: auto;
+  width: 90%;
+}
+
+.speaker {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.speaker_img {
+  height: 350px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.h3,
+.p,
+.small {
+  color: var(--black);
+  text-align: center;
+}
+.h3 {
+  font-size: clamp(14px, 2vw, 20px);
+  font-weight: 600;
+}
+.p,
+.small {
+  font-style: italic;
+  font-size: clamp(12px, 1vw, 16px);
+}
+
+/* Sponsor */
+.sponsor_container {
+  padding-inline: 3.813rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 6.5rem;
+  background: var(--sponsorblue);
+  padding-block: 61px;
+  /* position: relative; */
+  width: 100%;
+}
+.sponsor_heading {
+  text-align: center;
+  font-size: clamp(21.33px, 3.125vw, 50.52px);
+  font-weight: 700;
+  color: var(--black);
+}
+.sponsor_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 50px;
+  width: 90%;
+  margin-inline: auto;
+  align-items: center;
+  z-index: 1;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+}
+
+.sponsor_img {
+  max-width: 100%;
+  height: 100px;
+}
+/* @media screen and (max-width: 640px) {
+  
+} */
+@media screen and (max-width: 600px) {
+  .sponsor_div {
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsor_container {
+    padding-block: 30px;
+    gap: 3rem;
+  }
+
+  .sponsor_img {
+    max-width: 100%;
+    height: 70px;
+  }
+
+  .flex_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ship {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .flex_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .speaker_img {
+    max-width: 300px;
+  }
+}

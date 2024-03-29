@@ -1,0 +1,232 @@
+.footer_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+.footer_inner {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer_mail {
+  text-decoration: none;
+  line-height: 40px;
+}
+.pp{
+  font-size: 20px;
+  font-family: 'Roboto';
+  font-weight: 400px;
+  text-align: none;
+}
+
+.footer_inner_left img {
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+.footer_inner_middle {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.footer_inner p {
+  color: black;
+  font-family: var(--font);
+  font-weight: 400;
+  margin: 3px 0px;
+}
+.flexxer{
+  display: flex;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.spica{
+  padding-top: 10px;
+}
+.spicas{
+  padding-top: 5px;
+
+  margin-bottom: 20px;
+
+}
+.links{
+  color: #263789;
+  line-height: 40px;
+  font-size: 22px;
+}
+
+.contact{
+  color: #263789;
+  font-size: 22px;
+  margin-bottom: 25px;
+
+}
+.placeholder{
+  padding: 10px 30px;
+  border-radius: 5px;
+  border-color: #FF6A04;
+  font-size: 20px;
+  border-top-right-radius: none;
+  margin-top: 15px;
+}
+.placeholder:focus{
+  border-color: #FF6A04;
+}
+.social{
+  display: flex;
+ justify-content: space-around;
+ /* margin-left: 15px; */
+}
+.icons{
+  text-decoration: none;
+}
+.social img{
+  width: 20%;
+  cursor: pointer;
+}
+.stuff{
+  display: flex;
+}
+.ii {
+  width: 50px;
+  margin-left: -40px;
+  margin-top: 15px;
+
+}
+.update{
+    color: #263789;
+    font-weight: 500;
+    font-size: 25px;
+    font-family: 'Roboto';
+    padding-bottom: 10px;
+
+}
+/* .footer_inner_right span {
+  color: black;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 400;
+  margin: 20px 0px;
+}
+
+.footer_inner_right a {
+  margin-right: 20px;
+} */
+.copy{
+  font-size: 22px;
+  color: #747A82;
+}
+.footer_bottom {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  font-family: var(--font);
+  font-size: 15px;
+  font-weight: 400;
+  gap: 40%;
+}
+
+.linkss {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: center; */
+  gap: 20px;
+  color: #747A82;
+  font-size: 16px;
+  text-decoration: none; 
+}
+a{
+  color: #747A82;
+  text-decoration: none;
+  list-style: none;
+}
+.footer_res_addition {
+  display: none;
+}
+
+.desktop-text {
+  display: block;
+}
+
+.mobile-text {
+  display: none;
+}
+
+
+  .footer_inner_right_flex {
+    display: block;
+    /* align-items: center;
+    justify-content: space-between; */
+  }
+  .footer_inner_right span {
+    font-size: 10px;
+    margin: 10px 0px;
+  }
+  /* .footer_inner_right a svg {
+    width: 15px;
+    height: 15px;
+  } */
+  .footer_bottom {
+    height: 40px;
+    width: 100%;
+    font-size: 8px;
+  }
+.logo{
+  display: block;
+  text-align: left;
+}
+/* Mobile Styles */
+@media only screen and (max-width: 768px) {
+  .footer_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: left;
+  }
+
+  .footer_inner_left {
+    order: 1; /* Place logo first */
+    max-width: 100%; /* Make logo take full width */
+    display: block;
+    margin-bottom: 20px; /* Add some space from the next section */
+  }
+
+  .footer_inner_middle,
+  .footer_inner_rights {
+    order: 2; /* Place quick links and contact divs second */
+    width: 100%; /* Make both sections take full width */
+    display: block;
+  }
+  .update{
+    color: #263789;
+    font-weight: 500;
+    font-size: 20px;
+    font-family: 'Roboto';
+    padding-bottom: 10px;
+
+}
+  .footer_inner_rights {
+    margin-top: 20px; /* Add some space from the previous section */
+  }
+
+  .footer_inner_right {
+    order: 3; /* Place "Stay Updated" section last */
+    margin-top: 20px; /* Add some space from the previous section */
+  }
+
+  .stuff {
+    margin-top: 10px; /* Add some space above the input field */
+  }
+}
